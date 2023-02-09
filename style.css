@@ -1,0 +1,193 @@
+/*-----------fonts------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Work+Sans:wght@500&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+/* ----------common styles---------- */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    /* width: 90%;
+    max-width: 1200px;
+    margin: auto; */
+}
+/*------------------------------------------
+---------------- Header Styles ------------- 
+------------------------------------------*/
+header, .my-services, .main-section, .form {
+    width: 90%;
+    max-width: 1500px;
+    margin: 50px auto;
+    /* margin-bottom: 50px ; */
+    
+}
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.shrnk {
+    flex-shrink: 0;
+}
+.craze {
+    font-size: 2vw;
+    font-weight: bold;
+}
+.ulists {
+    list-style: none;
+    justify-content: space-between;
+    /* width: 25%; */
+}
+.icon{
+    margin-right: 10px;
+}
+.btn{
+    /* flex-shrink: 0; */
+    font-size: 100%;
+    
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #EE9B01;
+    border-radius: 8px;
+    border-style: none;
+    text-align: center;
+    /* margin-left: 20px; */
+}
+
+/*------------------------------------------
+------------- Header Styles End ------------ 
+------------------------------------------*/
+
+/*------------------------------------------
+------------- First Section ---------------- 
+------------------------------------------*/
+
+.first-section {
+    background-image: url(images/chair.jpeg);
+    
+    height: 500px;
+    min-width: 100%;
+    /* width: 100%; */
+    margin: auto;
+    background-size: cover;
+    /* filter: brightness(.67); */
+    position: relative;
+    background-position: center;
+}
+.first-section::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+}
+.first-section > div {
+    position: absolute;
+    top: 25%;
+    width: 50%;
+}
+.header-texts, .header-text{
+    position: relative;
+    font-size: 1vw;
+    color: #fff;
+    z-index: 5;
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+.header-text {
+    color: #EE9B01;
+    max-width: 50%;
+    font-size: 2vw;
+}
+/*------------------------------------------
+------------ First Section End -------------
+------------------------------------------*/
+
+
+/*------------------------------------------
+-------------- Main Section ---------------- 
+------------------------------------------*/
+
+.my-services {
+    font-size: 3vw;
+    text-align: right;
+}
+
+.service-img {
+    /* width: 35.5vw; */
+    height: 312px;
+    width: 100%;
+    flex-wrap: nowrap;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-bottom: 100px;
+}
+.service-headers {
+    font-size: 1.5vw;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.service-texts {
+    text-align: right;
+    font-weight: lighter;
+    color: rgb(151, 145, 145);
+    margin-bottom: 10px;
+}
+.service {
+    position: relative;
+}
+.service-btn {
+    /* position: absolute; */
+    float: right;
+    bottom: 0;
+    right: 0;
+}
+
+/*------------ Main Section End ------------*/
+
+.map-section {
+    background-image: url(images/map.png);
+    height: 500px;
+    background-position: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+.location {
+    background-color: rgb(151, 150, 150);
+    position: absolute;
+    top: 217px;
+    right: 170px;
+    padding: 40px;
+    padding-right: 20%;
+    border-radius: 8px;
+    color: #fff;
+}
+
+
+/* ---------------------------------------- */
+
+
+
+/* ------------------------------------------ */
+
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.info-firm {
+    justify-content: space-between;
+}
+
